@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.EXAMDB", "ITMO.EXAMDB\ITMO.EXAMDB.csproj", "{5D6896B0-3D45-433B-9B7E-37408494DA3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D6896B0-3D45-433B-9B7E-37408494DA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6896B0-3D45-433B-9B7E-37408494DA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6896B0-3D45-433B-9B7E-37408494DA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6896B0-3D45-433B-9B7E-37408494DA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0EBFCF9-6B29-4186-9421-4C7D00DE531A}
+	EndGlobalSection
+EndGlobal
