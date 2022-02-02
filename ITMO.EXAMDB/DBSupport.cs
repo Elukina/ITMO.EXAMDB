@@ -48,12 +48,28 @@ namespace ITMO.EXAMDB
 
         public void Delete(SalesPersonData s)
         {
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand($"DELETE FROM Sales.SalesPerson WHERE BusinessEntityID = {s.BusinessEntityID.ToString()}", connection))
+                {
+                    command.ExecuteNonQuery();
+                }
 
+            }
         }
 
         public void Add(SalesPersonData s)
         {
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand($"INSERT INTO Sales.SalesPerson VALUES (TerritoryID = {s.TerritoryID.ToString()}, SalesLastYear = {s.SalesLastYear.ToString()}, ModifiedDate = {s.ModifiedDate.ToString("yyyy-MM-dd")} WHERE BusinessEntityID = {s.BusinessEntityID.ToString()})", connection))
+                {
+                    command.ExecuteNonQuery();
+                }
 
+            }
         }
 
         public void Edit(SalesPersonData s)
